@@ -263,6 +263,8 @@ st.subheader("Pengaruh Cuaca terhadap Penyewaan")
 fig_weather = plt.figure(figsize=(10, 6))
 sns.boxplot(data=filtered_data, x='weathersit', y='cnt', palette='Set2')
 plt.title("Impact of Weather on Daily Bike Rentals")
+plt.xlabel("Weather Situation (1: Clear, 2: Mist, 3: Light Snow/Rain)")
+plt.ylabel("Total Daily Rentals")
 st.pyplot(fig_weather)
 
 # Visualization 2: Pola musiman
@@ -270,6 +272,8 @@ st.subheader("Pola Musiman dalam Penyewaan")
 fig_season = plt.figure(figsize=(10, 6))
 sns.boxplot(data=filtered_data, x='season', y='cnt', palette='coolwarm')
 plt.title("Seasonal Patterns in Daily Bike Rentals")
+plt.xlabel("Season (1: Spring, 2: Summer, 3: Fall, 4: Winter)")
+plt.ylabel("Total Daily Rentals")
 st.pyplot(fig_season)
 
 st.write("Dashboard ini menampilkan hasil analisis penyewaan sepeda berdasarkan cuaca dan musim.")
