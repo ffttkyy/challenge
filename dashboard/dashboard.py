@@ -33,8 +33,8 @@ import streamlit as st
 # ### Gathering Data
 # """
 
-hour_data = pd.read_csv('E:\challenge\data\hour.csv')
-day_data = pd.read_csv('E:\challenge\data\day.csv')
+hour_data = pd.read_csv('data/hour.csv')
+day_data = pd.read_csv('data/day.csv')
 
 # """**Insight:**
 # - Dataset berhasil dimuat.
